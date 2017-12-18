@@ -51,8 +51,8 @@ public class Happn extends Instrumentation{
         UiObject btnHappn1 = mDevice.findObject(new UiSelector().resourceId("com.ftw_and_co.happn:id/action_buttons_view_no_interaction_like_button"));
         //loop para enquanto like existir continuar clicando
 
-        UiScrollable morePhotos = new UiScrollable(new UiSelector().scrollable(true));
-        UiObject morePhotos1 = mDevice.findObject(new UiSelector().resourceId("com.ftw_and_co.happn:id/home_recycler_view"));
+        //UiScrollable morePhotos = new UiScrollable(new UiSelector().scrollable(true));
+        //UiObject morePhotos1 = mDevice.findObject(new UiSelector().resourceId("com.ftw_and_co.happn:id/home_recycler_view"));
 
         int var =1;
         while(var<2){
