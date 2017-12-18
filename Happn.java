@@ -54,8 +54,8 @@ public class Happn extends Instrumentation{
         //UiScrollable morePhotos = new UiScrollable(new UiSelector().scrollable(true));
         //UiObject morePhotos1 = mDevice.findObject(new UiSelector().resourceId("com.ftw_and_co.happn:id/home_recycler_view"));
 
-        int var =1;
-        while(var<2){
+    
+        while(true){
             if (!btnHappn1.exists()){
                 mDevice.swipe(502,1545,482,551,20);
             while(btnHappn1.exists()){
