@@ -46,20 +46,22 @@ public class Happn extends Instrumentation{
         appViews.scrollTextIntoView("happn");
         //declara o objeto do botão e clica no mesmo
         UiObject btnHappn = mDevice.findObject(new UiSelector().text("happn"));
+        //clica no mesmo e aguarda para uma nova tela
         btnHappn.clickAndWaitForNewWindow();
         //declara o botão like
         UiObject btnHappn1 = mDevice.findObject(new UiSelector().resourceId("com.ftw_and_co.happn:id/action_buttons_view_no_interaction_like_button"));
-        //loop para enquanto like existir continuar clicando
+
 
         //UiScrollable morePhotos = new UiScrollable(new UiSelector().scrollable(true));
         //UiObject morePhotos1 = mDevice.findObject(new UiSelector().resourceId("com.ftw_and_co.happn:id/home_recycler_view"));
 
-    
+        //loop para enquanto like existir continuar clicando
         while(true){
             if (!btnHappn1.exists()){
-                mDevice.swipe(502,1545,482,551,20);
+                mDevice.swipe(540,1400,540,700,20);
             while(btnHappn1.exists()){
                 btnHappn1.click();
+
 
                 }}}
     }
